@@ -1,0 +1,100 @@
+body{
+	background-color:blue;
+
+}
+.face{
+	height:300px;
+	width:300px;
+	background-color:yellow;
+	border-radius:50%;
+	margin-left:500px;
+	margin-top:150px;
+	position:relative;
+	border:5px solid black;
+
+}
+
+.eye{
+	height:40px;
+	width:40px;
+	background-color:red;
+	border-radius:50%;
+	margin-left:60px;
+	margin-top:60px;
+	position:absolute;
+
+}
+.leye{
+	height:40px;
+	width:40px;
+	background-color:red;
+	border-radius:50%;
+	margin-left:20px;
+	
+	position:absolute;
+
+}
+.lpupil{
+	height:40px;
+	width:40px;
+	background-color:red;
+    transform:rotate(39deg);
+	margin-left:-8px;
+	margin-top:10px;
+	position:absolute;
+
+}
+.eye2{
+	height:40px;
+	width:40px;
+	background-color:red;
+	border-radius:50%;
+	margin-left:150px;
+	margin-top:-2px;
+	position:absolute;
+
+}
+.reye{
+height:40px;
+	width:40px;
+	background-color:red;
+	border-radius:50%;
+	margin-left:130px;
+	margin-top:-2px;
+	position:absolute;
+}
+.rpupil{
+	height:40px;
+	width:40px;
+	background-color:red;
+    transform:rotate(39deg);
+	margin-left:12px;
+	margin-top:10px;
+	position:absolute;
+}
+.mouth {
+  position: absolute;
+  background-color: black;
+  width: 100px;
+  height:45px;
+  border-radius: 7px 7px 100px 100px;
+  margin-top:180px;
+  margin-left: 100px;
+}
+.leye,.reye,.eye,.eye2,.lpupil,.rpupil{
+	animation-name: box;
+	animation-duration: 10s;
+}
+@keyframes box{
+	0%{background-color: orange;}
+	25%{background-color: deeppink;}
+	50%{background-color: aqua;}
+	75%{background-color: red;}
+	100%{background-color: purple;}
+}
+.ani{
+	animation-iteration-count: 3;
+	animation-iteration-direction: reverse;
+	transition-timing-function: ease in;
+	transition:width2s,transition:height2s,transform: 10s;
+}
